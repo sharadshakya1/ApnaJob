@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeCollectionViewCell" id="gTV-IL-0wX" customClass="HomeCollectionViewCell" customModule="SigmaEkatraTrainingProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="104" height="35"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="104" height="35"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DxC-5A-WfC">
+                        <rect key="frame" x="0.0" y="0.0" width="104" height="35"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Software  " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zOX-mf-ZKG">
+                                <rect key="frame" x="20" y="4" width="57" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V6k-xo-brb">
+                                <rect key="frame" x="82" y="14" width="12" height="7"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="12" id="kZs-3x-yko"/>
+                                </constraints>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="multiply" catalog="system"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zOX-mf-ZKG" firstAttribute="leading" secondItem="DxC-5A-WfC" secondAttribute="leading" constant="20" id="R7l-z2-PJA"/>
+                            <constraint firstAttribute="bottom" secondItem="V6k-xo-brb" secondAttribute="bottom" constant="14" id="SU5-S5-Jeb"/>
+                            <constraint firstAttribute="trailing" secondItem="V6k-xo-brb" secondAttribute="trailing" constant="10" id="dwt-VH-l27"/>
+                            <constraint firstItem="V6k-xo-brb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zOX-mf-ZKG" secondAttribute="trailing" constant="5" id="gfB-mI-FaO"/>
+                            <constraint firstAttribute="bottom" secondItem="zOX-mf-ZKG" secondAttribute="bottom" constant="4" id="k7x-uj-LBH"/>
+                            <constraint firstItem="zOX-mf-ZKG" firstAttribute="top" secondItem="DxC-5A-WfC" secondAttribute="top" constant="4" id="nIr-rp-Z7o"/>
+                            <constraint firstItem="V6k-xo-brb" firstAttribute="top" secondItem="DxC-5A-WfC" secondAttribute="top" constant="14" id="wgX-eZ-cnt"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="DxC-5A-WfC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="8f8-a1-1dc"/>
+                <constraint firstAttribute="trailing" secondItem="DxC-5A-WfC" secondAttribute="trailing" id="TQp-oi-uLm"/>
+                <constraint firstAttribute="bottom" secondItem="DxC-5A-WfC" secondAttribute="bottom" id="Xfp-2S-Irm"/>
+                <constraint firstItem="DxC-5A-WfC" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="g3N-0H-pfd"/>
+            </constraints>
+            <size key="customSize" width="101" height="35"/>
+            <connections>
+                <outlet property="deleteOutlet" destination="V6k-xo-brb" id="gSZ-nb-oME"/>
+                <outlet property="labelView" destination="DxC-5A-WfC" id="PGN-ec-aqt"/>
+                <outlet property="searchLabel" destination="zOX-mf-ZKG" id="s5p-eU-hD2"/>
+            </connections>
+            <point key="canvasLocation" x="144.92753623188406" y="126.89732142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="multiply" catalog="system" width="128" height="111"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

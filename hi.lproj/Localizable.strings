@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  SigmaEkatraTrainingProject
+
+  Created by Sharad Shakya on 25/05/22.
+  
+*/
+"slidestitle"  = "लोरेम इप्सम डमी";
+"slidesdescription" = "लोरेम इप्सम केवल मुद्रण और टंकण परीक्षण का पाठ है";
+"skipButton" = "छोड़ें";
+"getStarted" = "शुरू हो जाओ";
+"phoneLabelText" = "           | फ़ोन से साइन इन करे";
+"googleLabelText" = "           | गूगल के साथ साइन इन करें";
+"faceBookText" = "           | फेसबुक के साथ साइन इन करें";
+"appleText" = "           | ऐप्पल के साथ साइन इन करें";
+"ekatraTest" = "एकात्रा टेस्ट";
+"findyourdreamjob" = "अपने सपनों की नौकरी खोजें";
+"continueGuest" = "अतिथि के रूप में जारी रखें";
+"ekatraLogo" = "meraRoj-1";
+  

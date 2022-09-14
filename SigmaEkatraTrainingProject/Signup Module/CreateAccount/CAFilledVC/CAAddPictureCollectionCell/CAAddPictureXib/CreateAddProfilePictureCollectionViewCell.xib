@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CreateAddProfilePictureCollectionViewCell" id="gTV-IL-0wX" customClass="CreateAddProfilePicCollectionCell" customModule="SigmaEkatraTrainingProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="292"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="292"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CBR-Rm-8ak">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="292"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lzu-iV-wah">
+                                <rect key="frame" x="126.5" y="34" width="122" height="120"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photoImage" translatesAutoresizingMaskIntoConstraints="NO" id="n8g-yf-Uew">
+                                        <rect key="frame" x="0.0" y="0.0" width="122" height="120"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="n8g-yf-Uew" secondAttribute="bottom" id="BpR-Hi-zdt"/>
+                                    <constraint firstItem="n8g-yf-Uew" firstAttribute="top" secondItem="Lzu-iV-wah" secondAttribute="top" id="GK0-Lc-3hv"/>
+                                    <constraint firstAttribute="width" constant="122" id="bnb-wI-6S0"/>
+                                    <constraint firstAttribute="height" constant="120" id="iUQ-Hl-1mu"/>
+                                    <constraint firstAttribute="trailing" secondItem="n8g-yf-Uew" secondAttribute="trailing" id="jo4-d9-yeP"/>
+                                    <constraint firstItem="n8g-yf-Uew" firstAttribute="leading" secondItem="Lzu-iV-wah" secondAttribute="leading" id="wjY-jb-sOu"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload Profile Photo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9g8-aP-jTe">
+                                <rect key="frame" x="108" y="169" width="163" height="19.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lNK-iF-2JJ">
+                                <rect key="frame" x="15" y="218.5" width="345" height="54"/>
+                                <color key="backgroundColor" red="0.13108365129999999" green="0.19161883499999999" blue="0.46051232990000002" alpha="0.8980392157" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="kT4-aY-ZVp"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Take Photo From Gallery">
+                                            <attributes>
+                                                <font key="NSFont" size="16" name="Helvetica-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="imageButton:" destination="gTV-IL-0wX" eventType="touchUpInside" id="42b-LS-Zzz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lNK-iF-2JJ" firstAttribute="top" secondItem="9g8-aP-jTe" secondAttribute="bottom" constant="30" id="093-dM-hc5"/>
+                            <constraint firstItem="Lzu-iV-wah" firstAttribute="top" secondItem="CBR-Rm-8ak" secondAttribute="top" constant="34" id="3Ix-Bi-VB4"/>
+                            <constraint firstAttribute="trailing" secondItem="lNK-iF-2JJ" secondAttribute="trailing" constant="15" id="3bl-Vb-LT0"/>
+                            <constraint firstItem="lNK-iF-2JJ" firstAttribute="leading" secondItem="CBR-Rm-8ak" secondAttribute="leading" constant="15" id="LmC-XW-FOI"/>
+                            <constraint firstItem="9g8-aP-jTe" firstAttribute="top" secondItem="Lzu-iV-wah" secondAttribute="bottom" constant="15" id="a4K-f4-o5R"/>
+                            <constraint firstItem="Lzu-iV-wah" firstAttribute="centerX" secondItem="CBR-Rm-8ak" secondAttribute="centerX" id="dH7-bn-LbT"/>
+                            <constraint firstItem="9g8-aP-jTe" firstAttribute="leading" secondItem="CBR-Rm-8ak" secondAttribute="leading" constant="108" id="mcQ-9j-66Z"/>
+                            <constraint firstAttribute="trailing" secondItem="9g8-aP-jTe" secondAttribute="trailing" constant="104" id="olA-Ra-zqr"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="CBR-Rm-8ak" secondAttribute="trailing" id="HLN-0w-fei"/>
+                <constraint firstItem="CBR-Rm-8ak" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="adc-LC-Wzf"/>
+                <constraint firstItem="CBR-Rm-8ak" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="tLN-zR-tE5"/>
+                <constraint firstAttribute="bottom" secondItem="CBR-Rm-8ak" secondAttribute="bottom" id="z6N-Ow-cMg"/>
+            </constraints>
+            <size key="customSize" width="375" height="292"/>
+            <connections>
+                <outlet property="buttonImage" destination="lNK-iF-2JJ" id="fjD-M8-BHz"/>
+                <outlet property="imageView" destination="n8g-yf-Uew" id="sUX-va-QFE"/>
+                <outlet property="viewForImage" destination="Lzu-iV-wah" id="YVw-JP-lCz"/>
+            </connections>
+            <point key="canvasLocation" x="373.1884057971015" y="184.82142857142856"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="photoImage" width="122" height="183"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

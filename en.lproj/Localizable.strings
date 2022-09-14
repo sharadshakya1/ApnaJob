@@ -1,0 +1,20 @@
+
+/*
+  Localizable.strings
+  SigmaEkatraTrainingProject
+
+  Created by Sharad Shakya on 25/05/22.
+  
+*/
+"slidestitle"  = "Lorem Ipsum Dummy";
+"slidesdescription" = "Lorem Ipsum is Simply text of the printing and typetesting";
+"skipButton" = "SKIP";
+"getStarted" = "Get Started";
+"phoneLabelText" = "           | Sign In with Phone";
+"googleLabelText" = "           | Sign In with Google";
+"faceBookText" = "           | Sign In with Facebook";
+"appleText" = "           | Sign In with Apple";
+"ekatraTest" = "EKATRA Test";
+"findyourdreamjob" = "Find your dream job";
+"continueGuest" = "Continue as a Guest";
+"ekatraLogo" = "ekatraTitleLogo";
